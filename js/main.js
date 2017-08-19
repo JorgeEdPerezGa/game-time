@@ -23,7 +23,7 @@ var bird3 = new Bird(500, 0);
 var bird4 = new Bird(700, 0);
 
 function fly() {
-  enigma.x -= 40;
+  enigma.x -= 60;
 
 }
 
