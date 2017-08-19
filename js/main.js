@@ -1,5 +1,7 @@
 require('../lib/style.css');
 
+const {playerImg, pipeImg, reversePipeImg} = require('../lib/images.js')
+
 var Enigma = require('./Enigma.js')
 var Building = require('./Building.js')
 var Bird = require('./Bird.js')
@@ -7,10 +9,13 @@ var Bird = require('./Bird.js')
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
-window.addEventListener('keydown', fly);
-canvas.addEventListener('click', fly);
+window.addEventListener('keydown', flying);
+canvas.addEventListener('click', flying);
+const enigma = new Enigma();
 
-var enigma = new Enigma(0, 100);
+// playerImg.onload = () => enigma.drawImg(context, playerImg);
+// enigma.draw(context);
+
 
 var building1 = new Building(100, 400);
 var building2 = new Building(300, 300);
@@ -22,15 +27,22 @@ var bird2 = new Bird(300, -100);
 var bird3 = new Bird(500, 0);
 var bird4 = new Bird(700, 0);
 
-function fly() {
-  enigma.x -= 60;
+function flying() {
+  enigma.fly()
+  enigma.gravity()
+}
 
+function updateEnigma() {
+  enigma.fall(canvas);
+  engima.draw(c);
+  player.drawEnigma
 }
 
 function gameLoop () {
   context.fillStyle = "black";
+
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.fillRect(enigma.y, enigma.x += 2, 80, 20);
+  context.fillRect(enigma.y, enigma.x += 2, enigma.width, enigma.height);
 
   context.fillStyle = "silver";
   context.fillRect(building1.x -= 2, building1.y, 100, 200);
