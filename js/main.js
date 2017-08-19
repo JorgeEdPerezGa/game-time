@@ -10,7 +10,6 @@ var context = canvas.getContext('2d');
 window.addEventListener('keydown', fly);
 canvas.addEventListener('click', fly);
 
-
 var enigma = new Enigma(0, 100);
 
 var building1 = new Building(100, 400);
@@ -22,8 +21,6 @@ var bird1 = new Bird(100, 0);
 var bird2 = new Bird(300, -100);
 var bird3 = new Bird(500, 0);
 var bird4 = new Bird(700, 0);
-
-
 
 function fly() {
   enigma.x -= 40;
@@ -53,3 +50,26 @@ function gameLoop () {
   } if (bird2.x <= -100) {
     bird2.x = 700
   }
+
+
+  context.fillStyle = "orange";
+  context.fillRect(building3.x -= 2, building3.y, 100, 200);
+  context.fillRect(bird3.x -= 2, bird3.y, 100, 200);
+  if (building3.x <= -100) {
+    building3.x = 700;
+  } if (bird3.x <= -100) {
+    bird3.x = 700
+  }
+
+  context.fillStyle = "green";
+  context.fillRect(building4.x -= 2, building4.y, 100, 200);
+  context.fillRect(bird4.x -= 2, bird4.y, 100, 300);
+  if (building4.x <= -100) {
+    building4.x = 700;
+  } if (bird4.x <= -100) {
+    bird4.x = 700
+  }
+  requestAnimationFrame(gameLoop);
+}
+
+requestAnimationFrame(gameLoop);
