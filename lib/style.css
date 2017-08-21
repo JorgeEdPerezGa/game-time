@@ -8,8 +8,8 @@ body {
 
 canvas {
   border: 1px solid black;
-  width: 1000px;
   margin-bottom: 30px;
+  margin-top: 150px;
   background-color: lightgray;
 }
 
@@ -30,9 +30,9 @@ p {
 
 p:hover {
   background-color: rgba(0, 0, 0, .4);
-  color: #fff;
   cursor: pointer;
 }
+
 p.active {
   background-color: #000;
   color: #fff;
