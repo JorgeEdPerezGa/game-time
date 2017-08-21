@@ -1,3 +1,39 @@
-#game {
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: PressStart2P;
+  text-align: center;
+}
+
+canvas {
   border: 1px solid black;
+  width: 1000px;
+  margin-bottom: 30px;
+  background-color: lightgray;
+}
+
+.game-mode {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+p {
+  border: 3px solid #000;
+  font-weight: bold;
+  width: 130px;
+  display: inline-block;
+  padding: 12px;
+  margin: 0;
+}
+
+p:hover {
+  background-color: rgba(0, 0, 0, .4);
+  color: #fff;
+  cursor: pointer;
+}
+p.active {
+  background-color: #000;
+  color: #fff;
 }
