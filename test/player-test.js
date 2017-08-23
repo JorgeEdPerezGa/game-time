@@ -24,7 +24,7 @@ it('should fall at a specific rate',
 function () {
   var player = new Player();
   player.fall(canvas);
-  assert.equal(player.y, 305);
+  assert.equal(player.y, 345);
 })
 
 });
