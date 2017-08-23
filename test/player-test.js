@@ -22,6 +22,14 @@ describe('Player', function () {
     assert.equal(player.y, 225);
   });
 
+
+it('should fall at a specific rate',
+function () {
+  var player = new Player();
+  player.fall(canvas);
+  assert.equal(player.y, 345);
+})
+
   it('should fall at a specific rate',
   function () {
     var player = new Player();
