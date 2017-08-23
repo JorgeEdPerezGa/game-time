@@ -13,25 +13,38 @@ canvas {
 
 .game-mode {
   display: flex;
-  justify-content: space-around;
+  background: none;
+  border: none;
   width: 360px;
+  border-style: none;
+  outline: none !important;
 }
 
 p {
   border: 3px solid black;
   font-size: 24px;
   font-weight: bold;
-  margin: 0;
+  margin-left: 30px;
+  margin-right: 30px;
   padding: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
   width: 130px;
+  border-radius: 100px;
+  border: none;
+  background: #9BCED3;
+  color: #FFFFFF;
 }
 
 p:hover {
-  background-color: #D2A340;
+  background-color: #79B2A7;
   cursor: pointer;
+  color: #FFFFFF;
+
 }
 
 p.active {
-  background-color: #FD8484;
-  color: #fff;
+  background-color: #3D6F77;
+  color: #FFFFFF;
+  outline: black;
 }
