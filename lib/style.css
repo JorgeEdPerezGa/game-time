@@ -6,10 +6,9 @@ body {
 }
 
 canvas {
-  /*background-color: lightgray;*/
   border: 1px solid black;
   margin-bottom: 30px;
-  margin-top: 150px;
+  margin-top: 30px;
 }
 
 .game-mode {
@@ -28,11 +27,11 @@ p {
 }
 
 p:hover {
-  background-color: gray;
+  background-color: #D2A340;
   cursor: pointer;
 }
 
 p.active {
-  background-color: #000;
+  background-color: #FD8484;
   color: #fff;
 }
