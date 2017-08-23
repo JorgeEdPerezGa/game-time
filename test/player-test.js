@@ -9,16 +9,19 @@ describe('Player', function () {
     assert.isFunction(Player);
   });
 
-  it('should be able to fall', function () {
+  it('should be able to feel the effects of gravity', function () {
     var player = new Player();
-    assert.isFunction(player.fall);
+
+    assert.isFunction(player.gravityEffect);
   });
 
   it('should be able to fly / changing y value', function () {
     var player = new Player();
+
     player.fly();
     assert.equal(player.y, 225);
   });
+
 
 it('should fall at a specific rate',
 function () {
@@ -26,5 +29,13 @@ function () {
   player.fall(canvas);
   assert.equal(player.y, 345);
 })
+
+  it('should fall at a specific rate',
+  function () {
+    var player = new Player();
+
+    player.gravityEffect(canvas);
+    assert.equal(player.y, 300.25);
+  });
 
 });
