@@ -1,7 +1,6 @@
 var assert = require('chai').assert;
 var Player = require('../lib/Player.js');
 var canvas = { width: 900, height: 700 };
-// var canvas = require('../lib/game.js');
 
 describe('Player', function () {
 
