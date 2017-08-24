@@ -1,6 +1,6 @@
-const assert = require('chai').assert;
-const Player = require('../lib/Player.js');
-const canvas = { width: 900, height: 700 };
+var assert = require('chai').assert;
+var Player = require('../lib/Player.js');
+var canvas = { width: 900, height: 700 };
 
 describe('Player', () => {
 
