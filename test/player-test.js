@@ -1,6 +1,6 @@
-var assert = require('chai').assert;
-var Player = require('../lib/Player.js');
-var canvas = { width: 900, height: 700 };
+const assert = require('chai').assert;
+const Player = require('../lib/Player.js');
+const canvas = { width: 900, height: 700 };
 
 describe('Player', () => {
 
@@ -9,13 +9,13 @@ describe('Player', () => {
   });
 
   it('should be able to feel the effects of gravity', () => {
-    var player = new Player();
+    const player = new Player();
 
     assert.isFunction(player.gravityEffect);
   });
 
   it('should be able to fly / changing y value', () => {
-    var player = new Player();
+    const player = new Player();
 
     player.fly();
     assert.equal(player.y, 225);
@@ -23,7 +23,7 @@ describe('Player', () => {
 
 
   it('should fall at a specific rate', () => {
-    var player = new Player();
+    const player = new Player();
 
     player.gravityEffect(canvas);
     assert.equal(player.y, 300.25);
