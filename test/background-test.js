@@ -29,14 +29,14 @@ describe('Background', function () {
     var background = new Background();
 
     assert.equal(background.x == 0, true);
-    assert.equal(background.y == 0, true)
+    assert.equal(background.y == 0, true);
   });
 
   it('should move when game starts', function() {
     var background = new Background();
 
     assert.equal(background.x == 0, true);
-    assert.equal(background.y == 0, true)
+    assert.equal(background.y == 0, true);
     background.backgroundMove();
     assert.equal(background.x < 0, true);
     assert.equal(background.y == 0, true);
