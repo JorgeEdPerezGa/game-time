@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: black;
 }
 
 canvas {
@@ -32,7 +33,7 @@ p {
   width: 130px;
   border-radius: 100px;
   border: none;
-  background: #9BCED3;
+  background: #D8849E;
   color: #FFFFFF;
 }
 
